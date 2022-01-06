@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+
+  padding-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.grid .card {
+  transition: 0.2s;
+}
+
+.grid .card:hover {
+  background: #aaa;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.spinner {
+  height: 50vh;
+}
+
+/* .main-spinner {
+  position: fixed;
+  height: 100vh;
+} */
+/* 
+.main-spinner_item {
+
+} */
