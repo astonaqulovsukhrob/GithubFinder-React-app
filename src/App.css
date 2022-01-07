@@ -26,6 +26,37 @@ body {
   height: 50vh;
 }
 
+.icon {
+  position: absolute;
+  top: 85px;
+  left: 10px;
+}
+
+.icon ul li {
+  list-style: none;
+}
+
+.icon ul li a {
+  font-size: 1.2rem;
+}
+
+.icon ul li:nth-child(1) a {
+  color: black;
+}
+
+.icon ul li:nth-child(3) a {
+  color: brown;
+}
+
+.repos {
+  overflow-y: scroll;
+  height: 20vh;
+}
+
+.repos::-webkit-scrollbar {
+  color: #000;
+}
+
 /* .main-spinner {
   position: fixed;
   height: 100vh;

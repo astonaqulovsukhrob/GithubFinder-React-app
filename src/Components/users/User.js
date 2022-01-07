@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-const User = ({ getUser, user, match }) => {
+const User = ({ getUser, user, userRepos, repos, match }) => {
   useEffect(() => {
     getUser(match.params.login);
+    userRepos(match.params.login);
   }, []);
   const {
     avatar_url,
@@ -72,6 +73,16 @@ const User = ({ getUser, user, match }) => {
               >
                 <i className="fab fa-github"></i> Github Profile
               </a>
+            </div>
+            <div className="mt-2 repos">
+              {repos &&
+                repos.map((repo) => {
+                  return (
+                    <a href={repo.html_url} className="btn btn-danger my-2 me-3">
+                      {repo.name}
+                    </a>
+                  );
+                })}
             </div>
           </div>
         </div>

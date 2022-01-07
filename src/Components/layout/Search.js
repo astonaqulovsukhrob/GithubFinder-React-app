@@ -17,7 +17,6 @@ function Search({ serchUsers, clearUser, userLength, showAlert }) {
     }
   };
 
-
   return (
     <>
       <form onSubmit={handleSubmit} className="d-block w-50 m-auto">
@@ -44,6 +43,26 @@ function Search({ serchUsers, clearUser, userLength, showAlert }) {
           Clear
         </button>
       )}
+
+      <div className="icon">
+        <ul>
+          <li>
+            <a target="_blank" href="https://github.com/astonaqulovsukhrob">
+              <i class="bi bi-github"></i>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://t.me/sukhrob_web">
+              <i class="bi bi-telegram"></i>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://instagram.com/sukhrobweb">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </>
   );
 }
